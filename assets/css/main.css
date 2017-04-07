@@ -4,8 +4,14 @@
   padding: 0;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
 }
-/*Estilo NAV*/
+
+body {
+  position: relative;
+}
+/*INICIA MENÚ Y BARRA NAV*/
 nav{
   top: 0;
   left: 0;
@@ -187,6 +193,7 @@ nav.open ul li {
   font-size: 60px;
   visibility: visible !important;
 }
+/*ACÁ MUERE MENÚ Y BARRA NAV*/
 
 #msg {
   position: absolute;
@@ -201,7 +208,8 @@ nav.open ul li {
   text-align: center;
   position: absolute;
   top: 480px;
-  width: 100%
+  width: 100%;
+  padding: 0 90px 0 90px;
 }
 
 h2 {
@@ -226,15 +234,15 @@ h2 {
 #girls div {
   position: relative;
   display: inline-block;
-  margin: -0.17%;
+  margin: -0.173%;
   width: 33.3%;
-  height: 400px;
+  height: 350px;
   overflow: hidden;
 }
 
 div .coder img, div .coder figcaption {
   position: absolute;
-  max-width: 100%;
+  width: 100%;
   top: 0;
   left: 0;
   transition: all 0.5s;
