@@ -22,7 +22,7 @@ nav{
   margin-top: 0;
   position: fixed;
   padding-top: 0px;
-  background: none;
+  background: #333333;
   transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
 }
 
@@ -41,7 +41,7 @@ nav{
   text-align: left;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url(../img/laboratoria_logo.svg);
+  background-image: url(../img/laboratoria.svg);
 }
 
 .open .logo,
@@ -98,7 +98,7 @@ nav.solid #logo .logo {
 /*Fin de la hamburguesa*/
 
 .header-in{
-  background-color: rgba(247, 182, 23, 0.81);
+  background-color: #f7b617;
 }
 
 .solid #toggle .menu {
@@ -197,15 +197,48 @@ nav.open ul li {
 
 /*typewriter effect*/
 #msg {
+  display: inline-block;
   position: absolute;
   top: 80px;
   left: 0;
   width: 100%;
   height: 300px;
+  background: #333333;
+  color: #fff;
+  font-family: monospace;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
 }
 
+/*El texto estático*/
+.msg {
+  color: #f7b617;
+  font-size: 28px;
+  padding-right: 10px;
+}
+/*el texto animado*/
+/*me guié de https://css-tricks.com/snippets/css/typewriter-effect/*/
+.typewriter h1 {
+  overflow: hidden;
+  border-right: .15em solid #f7b617;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .12em;
+  animation:
+  typing 3.5s steps(40, end),
+  blink-caret .75s step-end infinite;
+}
 
-
+/*Animacion del demonio*/
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #f7b617; }
+}
 /**/
 /*Coders*/
 #meet-us {
@@ -218,9 +251,11 @@ nav.open ul li {
 }
 
 h2 {
+  color: #333333;
   margin: 20px auto;
   padding: 20px;
-  font-style:
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 30px;
 }
 
 #girls {
@@ -244,6 +279,7 @@ h2 {
   width: 33.3%;
   height: 350px;
   overflow: hidden;
+  justify-content: center;
 }
 
 div .coder img, div .coder figcaption {
@@ -252,7 +288,6 @@ div .coder img, div .coder figcaption {
   top: 0;
   left: 0;
   transition: all 0.5s;
-
 }
 
 div .coder img {
@@ -270,7 +305,7 @@ div .coder figcaption {
   background: #f7b617;
   height: 402px;
   width: 100%;
-  padding: 150px 100px;
+  padding: 130px 100px;
   cursor: pointer;
   z-index: 0;
 }
@@ -282,24 +317,28 @@ div .coder img:hover {
 }
 
 div .coder figcaption:hover {
-  opacity: 0.95;
+  opacity: 0.99;
   cursor: pointer;
 }
 /*Fueron las Coders*/
 
-    /*Footer*/
+/*Footer*/
 footer {
   position: absolute;
   left: 0;
   width: 100%;
-  bottom: -970%;
+  bottom: -975%;
   text-align: center;
+  height: inherit;
+  background: #333333;
   height: 80px;
-
+  padding: 35px;
 }
 
 footer h3 {
   color: white;
+  font-family: 'Anonymous Pro', monospace;
   font-size: 20px;
-  background-color: black;
+
 }
+/*FIN FOOTER*/
